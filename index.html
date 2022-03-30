@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QQ签到小工具</title>
+    <meta name="keywords" content="QQ小工具,QQ工具箱" />
+    <meta name="description" content="QQ小工具,QQ工具箱" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="container" style="margin-top:35px">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="text-align: center;">
+                    <h3 class="panel-title">
+                        QQ签到小工具
+                </div>
+                <div class="panel-body" style="text-align: center;">
+                    <div class="list-group-item">
+                            <a href="https://jq.qq.com/?_wv=1027&k=dnZxQ86u" target="_blank">
+                                <img src="https://q4.qlogo.cn/headimg_dl?dst_uin=33703259&amp;spec=100" width="80px" style="border-radius: 50%;">
+                            </a>
+                        </div>
+                </div>
+            </div>
+            
+            
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="text-align: center;">
+                    <h3 class="panel-title">
+                        仅供娱乐，请勿用于违法途径
+                </div>
+                <ul class="nav nav-tabs">
+                        <li class="active" class=""><a href="#hot" data-toggle="tab"> <i class="glyphicon glyphicon-fire"></i> 推荐</a></li>
+                        <li><a href="#jiasu" data-toggle="tab" id="tab-query"><i class="glyphicon glyphicon-plane"></i> 加速</a></li>
+                        <li><a href="#qiandao" data-toggle="tab"><i class="glyphicon glyphicon-heart"></i> 签到</a></li>
+                        <li><a href="#qita" data-toggle="tab"><i class="glyphicon glyphicon-bookmark"></i> 其他</a></li>
+                </ul>
+                    <div class="list-group-item">
+                        <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="hot">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/mqq/" class="btn btn-block btn-danger">QQ每日打卡加速</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/nick/" class="btn btn-block btn-danger">QQ空白昵称</a>                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/big/" class="btn btn-block btn-danger">大会员签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/del/" class="btn btn-block btn-danger">清空空间说说</a>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/delly/" class="btn btn-block btn-danger">清空空间留言</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/gamevip/" class="btn btn-block btn-danger">蓝钻签到</a>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/mgame/" class="btn btn-block btn-danger">QQ手游等级加速</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/qqmusic/" class="btn btn-block btn-danger">QQ音乐等级加速+签到</a>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/weishi/" class="btn btn-block btn-danger">QQ微视等级加速</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/weiyun/" class="btn btn-block btn-danger">QQ微云签到</a>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade in" id="jiasu">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/mqq/" class="btn btn-block btn-info">QQ每日打卡加速</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/mgame/" class="btn btn-block btn-info">QQ手游等级加速</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/qqmusic/" class="btn btn-block btn-info">QQ音乐等级加速+签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/weishi/" class="btn btn-block btn-info">QQ微视等级加速</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade in" id="qiandao">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/big/" class="btn btn-block btn-info">大会员签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/gamevip/" class="btn btn-block btn-info">蓝钻签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/video/" class="btn btn-block btn-info">腾讯视频签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/vipqd/" class="btn btn-block btn-info">QQ会员签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/yqd/" class="btn btn-block btn-info">QQ黄钻签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/ht/" class="btn btn-block btn-info">空间花藤签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/book/" class="btn btn-block btn-info">小说书架签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/buluo/" class="btn btn-block btn-info">兴趣部落签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/dm/" class="btn btn-block btn-info">腾讯动漫签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/game/" class="btn btn-block btn-info">腾讯游戏签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/jfsc/" class="btn btn-block btn-info">积分商城签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/kjqd/" class="btn btn-block btn-info">空间签到说说</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/mqq/" class="btn btn-block btn-info">QQ每日打卡加速</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/qqtask/" class="btn btn-block btn-info">QQ众测签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/qunqd/" class="btn btn-block btn-info">QQ群签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/fj/" class="btn btn-block btn-info">手机QQ附近签到</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/weiyun/" class="btn btn-block btn-info">QQ微云签到</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/yundong/" class="btn btn-block btn-info">QQ手机运动签到</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade in" id="qita">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/del/" class="btn btn-block btn-info">清空空间说说</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/delly/" class="btn btn-block btn-info">清空空间留言</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/dld/" class="btn btn-block btn-info">大乐斗领礼包</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/mc/" class="btn btn-block btn-info">QQ牧场挂机</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/nc/" class="btn btn-block btn-info">QQ农场挂机</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/nick/" class="btn btn-block btn-info">QQ空白昵称</a>
+                                        </td>
+                                    </tr>
+                                    <tr height="50">
+                                        <td>
+                                            <a href="qq/shuo/" class="btn btn-block btn-info">空间随机发表图片说说</a>
+                                        </td>
+                                        <td>
+                                            <a href="qq/mail/" class="btn btn-block btn-info">QQ邮箱中转续期</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
